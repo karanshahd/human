@@ -1,0 +1,12 @@
+<?php 
+
+error_reporting(0);
+
+DEFINE ('DB_USER', user);
+DEFINE ('DB_PASSWORD', password);
+DEFINE ('DB_HOST', host);
+DEFINE ('DB_NAME', 'human');
+
+$dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' . mysqli_connect_error() );
+
+?>
